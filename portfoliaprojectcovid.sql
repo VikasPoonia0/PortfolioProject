@@ -23,7 +23,7 @@ order by 1,2;
 
 -- looking at total cases vs population
 -- shows what percentage of population got covid
-select location, date, total_cases, population, (total_deaths/population)*100 as percent_population_infected
+select location, date, total_cases, population, (total_cases/population)*100 as percent_population_infected
 from coviddeaths
 -- where location like 'India'
 order by 1,2;
